@@ -1,4 +1,5 @@
-use Mix.Config
+# use Mix.Config
+import Config
 
 config :weather, env: :prod
 

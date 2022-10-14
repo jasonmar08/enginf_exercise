@@ -5,14 +5,15 @@
 # is restricted to this project.
 
 # General application configuration
-use Mix.Config
+# use Mix.Config
+import Config
 
 config :weather,
   ecto_repos: [Weather.Repo],
   env: :dev
 
 # Configures the endpoint
-config :weather, WeatherWeb.Endpoint,
+config :weather_web, WeatherWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "47zk1PtVrs01ltSZu9akbgqqHRzj3YG0+oDjqpEjhf3e+nRIwb9NYJCCO5EX5/lg",
   render_errors: [view: WeatherWeb.ErrorView, accepts: ~w(html json)],
